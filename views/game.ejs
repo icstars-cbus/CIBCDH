@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="stylesheets/overlay.css">
+    <link rel="stylesheet" href="stylesheets/dicestyle.css">
+    <title><%= user.first_name %>'s Session</title>
+</head>
+<body>
+
+
+<div id="cf">
+		<img class="bottom" src="image-repository/bgg.png" />
+		<img class="top" src="image-repository/bgd.png" />
+	</div>
+	<div class="grid-container">
+
+		<div class="tile" id="0"></div>
+		<div class="tile" id="1"></div>
+		<div class="tile" id="2"></div>
+		<div class="tile" id="3"></div>
+		<div class="tile" id="4"></div>
+		<div class="tile" id="5"></div>
+		<div class="tile" id="6"></div>
+		<div class="tile" id="7"></div>
+		<div class="tile" id="8"></div>
+		<div class="tile1" id="menu-bu">
+			<button class="button" onclick="rulesPopUp()">Rules</button>
+			<button type="submit" class="button">Save</button>
+            <button class="button" onclick="leaderPopUp()">Leaderboard</button>
+            <button class="button"><a href="/logout">Log Out</a> </button>
+		</div>
+		<div></div>
+		<div class="tile" id="45"></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div class="tile" id="9"></div>
+		<div></div>
+		<div class="tile" id="44"></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div class="tile" id="10"></div>
+		
+		<div></div>
+		<div class="tile" id="43"></div>
+		<div></div>
+		<div class="tile" id="17"></div>
+		<div class="tile" id="16"></div>
+		<div class="tile" id="15"></div>
+		<div class="tile" id="14"></div>
+		<div class="tile" id="13"></div>
+		<div class="tile" id="12"></div>
+		<div class="tile" id="11"></div>
+		<div id="menu-do"></div>
+		<div></div>
+		<div class="tile" id="42"></div>
+		<div></div>
+		<div class="tile" id="18"></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>		
+		<div></div>
+		<div class="tile1" id="Balance">
+			<h1>Wallet</h1>
+			<h2 id="wal"></h2>
+		</div>
+		<div></div>
+		<div class="tile" id="41"></div>	
+		<div></div>	
+		<div class="tile" id="19"></div>	
+		<div></div>
+		<div></div>		
+		<div></div>	
+		<div></div>
+		<div></div>
+		<div></div>
+		<div class="tile1" id="Balance">
+			<h1>Invested</h1>
+			<h2 id="inv"></h2>
+		</div>
+		<div></div>
+		<div class="tile" id="40"></div>
+		<div></div>
+		<div class="tile" id="20"></div>
+		<div class="tile" id="21"></div>
+		<div class="tile" id="22"></div>
+		<div class="tile" id="23"></div>
+		<div class="tile" id="24"></div>
+		<div class="tile" id="25"></div>
+		<div class="tile" id="26"></div>
+		<div class="tile1" id="Balance">
+			<h1>Saved</h1>
+			<h2 id="sav"></h2>
+		</div>
+		<div></div>
+		<div class="tile" id="39"></div>
+		<div></div>	
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div class="tile" id="27"></div>
+		<div class="tile1" id="dice">
+			<main>
+				<div class="dice" onclick="rollDice()">
+					<ol class="die-list even-roll" data-roll="1" id="die-1">
+						<li class="die-item" data-side="1">
+							<span class="dot"></span>
+						</li>
+						<li class="die-item" data-side="2">
+							<span class="dot"></span>
+							<span class="dot"></span>
+						</li>
+						<li class="die-item" data-side="3">
+							<span class="dot"></span>
+							<span class="dot"></span>
+							<span class="dot"></span>
+						</li>
+						<li class="die-item" data-side="4">
+							<span class="dot"></span>
+							<span class="dot"></span>
+							<span class="dot"></span>
+							<span class="dot"></span>
+						</li>
+						<li class="die-item" data-side="5">
+							<span class="dot"></span>
+							<span class="dot"></span>
+							<span class="dot"></span>
+							<span class="dot"></span>
+							<span class="dot"></span>
+						</li>
+						<li class="die-item" data-side="6">
+							<span class="dot"></span>
+							<span class="dot"></span>
+							<span class="dot"></span>
+							<span class="dot"></span>
+							<span class="dot"></span>
+							<span class="dot"></span>
+						</li>
+					</ol>
+				</div>
+			</main>
+		</div>
+		<div></div>
+		<div class="tile" id="38"></div>
+		<div></div>		
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>		
+		<div></div>		
+		<div class="tile" id="28"></div>
+		<div></div>
+		<div class="tile" id="37"></div>
+		<div class="tile" id="36"></div>
+		<div class="tile" id="35"></div>
+		<div class="tile" id="34"></div>
+		<div class="tile" id="33"></div>
+		<div class="tile" id="32"></div>
+		<div class="tile" id="31"></div>
+		<div class="tile" id="30"></div>
+		<div class="tile" id="29"></div>
+		<div></div>
+	</div>
+
+
+
+	<div class="form-popup" id="rulesPopUp">
+		<h1>Rules</h1>
+		<p>Click on the dice to roll and begin your turn. TechSuppork will move around the board and a question will pop up based on the tile you land on.</p>
+		<ul>
+			<li>Green is the start square, everytime you pass it you'll get a payday of $200.</li>
+			<li>Red is for spend!</li>
+			<li>Orange is for Saving. Your savings will increase every lap around the board.</li>
+			<li>Purple is for Donating.</li>
+			<li>Yellow is for Random Events!</li>
+			<li>Blue tiles allow you to invest your money, investments will grow over time.</li>
+		</ul>
+		<button type="submit" class="btn cancel" onclick="closeRules()">Close</button>
+	</div>
+	<div class="form-popup" id="leaderPopUp">
+		<form action="/action_page.php" class="box">
+			<h1>Leaderboard</h1>
+			<h2>1st...</h2>
+			<h2>2nd...</h2>
+		</form>
+	</div>
+			<div class="form-popup" id="question-popup">
+				<h1> You landed on a <span id="tileColor"></span> tile!</h1>
+				<h2> Press A for $50</h2>
+				<button type="submit" class="btn cancel" onclick="endland()">Close</button>
+            </div>
+
+
+            <!-- <h2>Success! Welcome, <%= user.first_name %> <%= user.last_name %>!</h2> -->
+            
+            <script src="js/diceRoll.js"></script>
+			<script src="js/main.js"></script>
+			<script src="js/tile.js"></script>
+			<script src="js/turns.js"></script>
+	</body>
+
+</html>
