@@ -20,7 +20,9 @@
     "express-session": "^1.17.0",
     "mongoose": "^5.7.11",
     "mongoose-unique-validator": "^2.0.3",
-    "path": "^0.12.7",
-    "server": "^1.0.19"
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "missing": "0.0.1"
   }
 }
