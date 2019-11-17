@@ -1,7 +1,7 @@
 FROM node:10
-
+EXPOSE 8000
 # Change working directory
-WORKDIR "/cibcdh"
+
 
 # Update packages and install dependency packages for services
 RUN apt-get update \
@@ -20,7 +20,7 @@ COPY . /app
 ENV NODE_ENV production
 ENV PORT 8000
 
-EXPOSE 8000
+
 
 USER node
 
