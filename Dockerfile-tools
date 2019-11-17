@@ -1,7 +1,7 @@
 FROM node:10
   
 ENV PORT 8000
-
+ 
 ENV NODE_HEAPDUMP_OPTIONS nosignal
 
 # Install OS updates
